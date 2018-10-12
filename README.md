@@ -34,3 +34,20 @@ these programs can be found at [this link](https://www.frostburg.edu/academics/c
 * OAuth Authentication Service (NodeJS)
 * Web App Business Logic Back-end (NodeJS)
 * LaTEX Document generator (Python)
+
+
+## Built With
+
+* [Nodejs](https://nodejs.org/en/docs/) - Backend
+* [Expressjs](http://expressjs.com/en/4x/api.html) - Backend Routing
+* [MongoDB](https://docs.mongodb.com/) - Database
+* [Reactjs](https://reactjs.org/) - Frontend
+
+## Authors
+
+* **Jake Wilson** and **Steven Moon**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+

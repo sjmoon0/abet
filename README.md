@@ -28,10 +28,9 @@ these programs can be found at [this link](https://www.frostburg.edu/academics/c
 *
 
 #### Under Development
-* 
+* Web App Front-End (React)
 
 #### Not Yet Started
-* Web App Front-End (React)
 * OAuth Authentication Service (NodeJS)
 * Web App Business Logic Back-end (NodeJS)
 * LaTEX Document generator (Python)

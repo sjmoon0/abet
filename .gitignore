@@ -1,6 +1,7 @@
-/node_modules
-bundle.js
-npm-debug.log
+/front-end/node_modules
+/front-end/bundle.js
+/front-end/npm-debug.log
+/front-end/package-lock.json
 .DS_Store
 
 # IntelliJ

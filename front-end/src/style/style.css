@@ -6,6 +6,10 @@
   float: right;
 }
 
+.date-separator-text{
+  font-size: 20pt;
+}
+
 .center-text{
   text-align: center;
 }

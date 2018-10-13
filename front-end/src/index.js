@@ -5,6 +5,7 @@ import _ from "lodash";
 import Login from "./components/login.js";
 import Header from "./components/header.js";
 import Tasks from "./components/tasks.js";
+import InstructorEdit from "./components/instructor_edit.js";
 
 class App extends Component{
     render(){
@@ -12,7 +13,8 @@ class App extends Component{
         <div>
           <Header />
           {/*<Login />*/}
-          <Tasks />
+          {/*<Tasks />*/}
+          <InstructorEdit />
         </div>
       );
     }

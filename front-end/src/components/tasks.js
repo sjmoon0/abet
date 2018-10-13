@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Tasks extends Component{
     render(){
@@ -8,11 +9,13 @@ class Tasks extends Component{
             <div className="row">
               <div className="form-group centered">
                 <div className="col-xs-12 col-md-6">
-                  <button type="button" className="btn btn-block btn-primary">
-                    <i className="fa fa-user-o"></i>
-                    &nbsp;
-                    Edit Instructor Info
-                  </button>
+                  <Link to="/instructor">
+                    <button type="button" className="btn btn-block btn-primary">
+                      <i className="fa fa-user-o"></i>
+                      &nbsp;
+                      Edit Instructor Info
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

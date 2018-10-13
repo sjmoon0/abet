@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import _ from "lodash";
 
 import Login from "./components/login.js";
@@ -10,12 +11,14 @@ import InstructorEdit from "./components/instructor_edit.js";
 class App extends Component{
     render(){
       return (
-        <div>
-          <Header />
-          {/*<Login />*/}
-          {/*<Tasks />*/}
-          <InstructorEdit />
-        </div>
+          <BrowserRouter>
+            <div>
+              <Route path="" component={ Header }/>
+              <Route exact path="/" component={ Login } />
+              <Route path="/tasks" component={ Tasks } />
+              <Route path="/instructor" component={ InstructorEdit } />
+            </div>
+          </BrowserRouter>
       );
     }
 }

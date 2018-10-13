@@ -4,13 +4,15 @@ import _ from "lodash";
 
 import Login from "./components/login.js";
 import Header from "./components/header.js";
+import Tasks from "./components/tasks.js";
 
 class App extends Component{
     render(){
       return (
         <div>
           <Header />
-          <Login />
+          {/*<Login />*/}
+          <Tasks />
         </div>
       );
     }

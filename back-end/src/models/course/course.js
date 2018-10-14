@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let CourseSchema = new Schema({
+export const CourseSchema = new Schema({
     instructor: {type: mongoose.Schema.Types.ObjectId, ref: 'Professor'},
     courseNumber:  Number,
     courseSubject: String,

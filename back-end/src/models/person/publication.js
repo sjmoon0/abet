@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let PublicationSchema = new Schema({
+export const PublicationSchema = new Schema({
     journalName:  String,
     volume: String,
     conferenceName: String,

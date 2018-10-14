@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-let ServiceSchema = new Schema({
+export const ServiceSchema = new Schema({
     serviceTitle:  String,
     description: String,
     monthCompleted:   String,

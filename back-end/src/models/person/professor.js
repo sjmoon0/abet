@@ -6,5 +6,9 @@ export const ProfessorMetaSchema = new Schema({
     firstName:  String,
     lastName: String,
     title: String,
-    tenure:   boolean
+    tenure: Boolean,
+    created_date: {
+      type: Date,
+      default: Date.now
+    }
   });

@@ -22,11 +22,13 @@ class Tasks extends Component{
             <div className="row">
               <div className="form-group centered">
                 <div className="col-xs-12 col-md-6">
-                  <button type="button" className="btn btn-block btn-primary">
-                    <i className="fa fa-book"></i>
-                    &nbsp;
-                    Edit Course Info
-                  </button>
+                  <Link to="/course">
+                    <button type="button" className="btn btn-block btn-primary">
+                      <i className="fa fa-book"></i>
+                      &nbsp;
+                      Edit Course Info
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

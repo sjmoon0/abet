@@ -7,6 +7,7 @@ import Login from "./components/login.js";
 import Header from "./components/header.js";
 import Tasks from "./components/tasks.js";
 import InstructorEdit from "./components/instructor_edit.js";
+import CourseEdit from "./components/course_edit.js";
 
 class App extends Component{
     render(){
@@ -17,6 +18,7 @@ class App extends Component{
               <Route exact path="/" component={ Login } />
               <Route path="/tasks" component={ Tasks } />
               <Route path="/instructor" component={ InstructorEdit } />
+              <Route path="/course" component={ CourseEdit } />
             </div>
           </BrowserRouter>
       );

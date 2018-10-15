@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 
+import CourseEditDropdown from "./course_edit_dropdown.js";
+
+import makeCorsRequest from "../api-access/course_data_grab.js";
+
 class CourseEdit extends Component{
+    constructor(props){
+      super(props);
+      this.state = { courses: []};
+      this.courseSearch((courses) => {
+        console.log(courses);
+        this.setState({ courses });
+      });
+    }
+
     render(){
         return (
           <div className="container">
             <br/>
             <form>
               <h3 className="center-text">Edit Course</h3>
-              <div className="form-group centered">
-                <div className="col-xs-12 col-md-8 col-lg-6">
-                  <select className="form-control">
-                    <option defaultValue>Select Course:</option>
-                    <option value="1">Add Course...</option>
-                    <option value="2">COSC100</option>
-                  </select>
-                </div>
-              </div>
+              <CourseEditDropdown courses={this.state.courses} />
               <div className="form-group centered">
                 <div className="col-xs-12 col-md-8 col-lg-6">
                   <div className="row">
@@ -48,6 +53,11 @@ class CourseEdit extends Component{
           </div>
         );
     }
-};
+
+    courseSearch(action){
+      let data = null;
+      makeCorsRequest("course",data,action);
+    }
+}
 
 export default CourseEdit;

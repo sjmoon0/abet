@@ -1,16 +1,16 @@
 import React from "react";
 
-const CourseEditDropdown = (props) => {
-  let courseItems = props.courses.map(e => {
-    return <option key={e._id} value={e._id}>{e.courseID}</option>
+const CourseEditDropdown = ({courses, onCourseSelect}) => {
+  let courseItems = courses.map( (e,index) => {
+    return <option key={e._id} value={index}>{e.courseID}</option>
   });
 
   return (
       <div className="form-group centered">
         <div className="col-xs-12 col-md-8 col-lg-6">
-          <select className="form-control">
+          <select onChange={(e)=>onCourseSelect(e.target.value)} className="form-control">
             <option defaultValue>Select Course:</option>
-            <option value="1">Add Course...</option>
+            <option >Add Course...</option>
             {courseItems}
           </select>
         </div>

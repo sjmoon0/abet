@@ -15,10 +15,12 @@ function createCORSRequest(method, url) {
   return xhr;
 }
 
+const REMOTE_MONGO_IP="0.0.0.0";
+
 // Make the actual CORS request.
-function makeCorsRequest(path,data,action) {
+export function makeCorsGETRequest(path,data,action) {
   // This is a sample server that supports CORS.
-  var url = `http://localhost:3030/${path}`;
+  var url = `http://${REMOTE_MONGO_IP}:3030/${path}`;
 
   var xhr = createCORSRequest('GET', url);
   if (!xhr) {
@@ -39,5 +41,3 @@ function makeCorsRequest(path,data,action) {
 
   xhr.send(data);
 }
-
-export default makeCorsRequest;
